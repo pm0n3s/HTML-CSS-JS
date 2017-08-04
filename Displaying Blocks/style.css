@@ -1,0 +1,40 @@
+#wrapper {
+    background-color: #d4d2ae;
+    padding: 15px;
+    width: 800px;
+}
+#banner {
+    text-align: center;
+    margin-top: 50px;
+}
+#banner h1{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 35px
+}
+#banner img {
+    height: 50px;
+    width: 100px;
+    background-color: white;
+}
+#main_content img {
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    padding: 20px;
+}
+.odd {
+    display: inline-block;
+}
+.odd img {
+    background-color: #82b4ee;
+}
+.even {
+    display: inline-block;
+}
+.even img {
+    background-color: #f36870;
+}
+.row {
+    text-align: center;
+}

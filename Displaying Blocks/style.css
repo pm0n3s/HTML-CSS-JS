@@ -23,14 +23,11 @@
     border: 5px solid black;
     padding: 20px;
 }
-.odd {
+.odd, .even {
     display: inline-block;
 }
 .odd img {
     background-color: #82b4ee;
-}
-.even {
-    display: inline-block;
 }
 .even img {
     background-color: #f36870;

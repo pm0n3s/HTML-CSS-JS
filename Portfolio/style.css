@@ -1,0 +1,90 @@
+#wrapper {
+    width: 920px;
+}
+#header {
+    background: -webkit-linear-gradient(#f1f1f1, #fefefe);
+    background: -moz-linear-gradient(#f1f1f1, #fefefe);
+    background: -o-linear-gradient(#f1f1f1, #fefefe);
+    background: linear-gradient(#f1f1f1, #fefefe);
+}
+#header h1 {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 400px;
+}
+#header h3 {
+    display: inline-block;
+}
+#main {
+    background: radial-gradient(#6f5964, #433038, #1c0c10);
+    background: -webkit-radial-gradient(#6f5964, #433038, #1c0c10);
+    background: -o-radial-gradient(#6f5964, #433038, #1c0c10);
+    background: -moz-radial-gradient(#6f5964, #433038, #1c0c10);
+    padding: 30px;
+}
+#main_top {
+    margin-bottom: 30px;
+}
+#main_top img{
+    width: 350px; 
+    border: 5px solid #c0c0c0;
+    margin-right: 30px;
+}
+#mt1 {
+    display: inline-block;
+    width: 460px;
+    vertical-align: top;
+}
+.title h3{
+    background: -webkit-linear-gradient(#b3b2b6, #8a8896, #b3b2b6);
+    background: -moz-linear-gradient(#b3b2b6, #8a8896, #b3b2b6);
+    background: -o-linear-gradient(#b3b2b6, #8a8896, #b3b2b6);
+    background: linear-gradient(#b3b2b6, #8a8896, #b3b2b6);
+    color: white;
+    padding: 5px;
+    vertical-align: top;
+    margin: 0;
+    overflow: auto;
+}
+.body {
+    background: linear-gradient(to right, #fefdfe, #dacbd9);
+    margin: 0;
+    overflow: auto;
+    padding: 5px;
+}
+
+.mb1 {
+    width: 264px;
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+}
+#mb3 {
+    margin: 0;
+    display: inline-block;
+}
+.mb1 .body img {
+     width: 100%; 
+     padding: 0;
+}
+.title h4 {
+    background: -webkit-linear-gradient(#b3b2b6, #8a8896, #b3b2b6);
+    background: -moz-linear-gradient(#b3b2b6, #8a8896, #b3b2b6);
+    background: -o-linear-gradient(#b3b2b6, #8a8896, #b3b2b6);
+    background: linear-gradient(#b3b2b6, #8a8896, #b3b2b6);
+    color: white;
+    padding: 5px;
+    vertical-align: top;
+    margin: 0;
+    overflow: auto;
+}
+.mb1 .body .top img, .mb1 .body .bottom img{
+    width: 46px;
+}
+.button {
+    background-color: #407d61;
+    color: white;
+    border-radius: 7px;
+    padding: 3px;
+    text-align: center;
+}

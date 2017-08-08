@@ -81,10 +81,31 @@
 .mb1 .body .top img, .mb1 .body .bottom img{
     width: 46px;
 }
-.button {
+button {
     background-color: #407d61;
     color: white;
     border-radius: 7px;
     padding: 3px;
+}
+.button {
     text-align: center;
+}
+#footer {
+    background: -webkit-linear-gradient(#fefefe, #f1f1f1);
+    background: -moz-linear-gradient(#fefefe, #f1f1f1);
+    background: -o-linear-gradient(#fefefe, #f1f1f1);
+    background: linear-gradient(#fefefe, #f1f1f1);
+    padding: 10px;
+}
+#footer p {
+    text-align: center;
+    margin: 0;
+    overflow: auto;
+}
+#footercontact{
+    text-align: center;
+    margin-top: 10px;
+}
+#footercontact img{
+    width: 15px;
 }

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>  
+    <head>
+        <title>A template for Jquery</title>
+        <link rel="stylesheet" href="jQuery.css">
+        <meta name="description" content="a template for jquery...">
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script>
+            $(document).ready(function(){
+                $('#click').click(function(){
+                    alert('the click method "listens" for the user to click')
+                });
+                $('#hide').click(function(){
+                    $('.hide').hide();
+                });
+                $('#show').click(function(){
+                    $('.hide').show();
+                });
+                $('#toggle').click(function(){
+                    $('.toggle').toggle();
+                });
+                $('.slide').hide();
+                $('#slidedown').click(function(){
+                    $('.slide').slideDown();
+                });
+                $('#slideup').click(function(){
+                    $('.slide').slideUp();
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="section">
+                <h1>Click</h1>
+                <button id="click">Click</button>
+                <p>Click the button to demonstrate a how a click listener works.</p>
+            </div>
+            <div class="section">
+                <h1>Hide</h1>
+                <button id="hide">Hide</button>
+                <p>Click the button to hide the next sentence. <span class="hide">Hide this!</span></p>
+            </div>
+            <div class="section">
+                <h1>Show</h1>
+                <button id="show">Show</button>
+                <p>Click the button to show the hidden sentence from "Hide".</p>
+            </div>
+            <div class="section">
+                <h1>Toggle</h1>
+                <button id="toggle">Toggle</button>
+                <p>Click the button to toggle hiding/showing of <span class="toggle">THIS!</span>.</p>
+            </div>
+            <div class="section">
+                <h1>Slidedown</h1>
+                <button id="slidedown">Slidedown</button>
+                <p>Click the button to slide down(show) some text. <span class="slide">some text</span></p>
+            </div>
+            <div class="section">
+                <h1>Slideup</h1>
+                <button id="slideup">Slideup</button>
+                <p>Click the button to slide up(hide) the text from "Slidedown".</p>
+            </div>
+            <div class="section">
+                <h1>Slidetoggle</h1>
+                <button id="slidetoggle">Slidetoggle</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>Fadein</h1>
+                <button id="fadein">Fadein</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>Fadeout</h1>
+                <button id="fadeout">Fadeout</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>Addclass</h1>
+                <button id="addclass">Addclass</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>Before</h1>
+                <button id="before">Before</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>After</h1>
+                <button id="after">After</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>Append</h1>
+                <button id="append">Append</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>Html</h1>
+                <button id="html">Html</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>Attr</h1>
+                <button id="attr">Attr</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>Val</h1>
+                <button id="val">Val</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>Text</h1>
+                <button id="text">Text</button>
+                <p>Click the button to</p>
+            </div>
+            <div class="section">
+                <h1>Data</h1>
+                <button id="data">Data</button>
+                <p>Click the button to</p>
+            </div>
+        </div>
+    </body>
+</html>

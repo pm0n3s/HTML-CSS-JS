@@ -4,13 +4,17 @@
     <meta content="disappearing ninja">
     <style>
       img {
-        width: 200px
+        width: 400px;
+        display: inline-block;
+        margin: 0 50px 50px 0;
       }
     </style>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script>
       $(document).ready(function(){
-
+        $('img').click(function(){
+          $(this).hide('slow');
+        });
       });
     </script>
   </head>

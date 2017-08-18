@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+.red {
+    color: red;
+}
+h3 {
+    display: inline-block;
+}
 #wrapper {
     padding: 5px;
     background-color: lightgray;

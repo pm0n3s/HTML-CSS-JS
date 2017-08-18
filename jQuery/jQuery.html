@@ -26,7 +26,48 @@
                 $('#slideup').click(function(){
                     $('.slide').slideUp();
                 });
-            })
+                $('#slidetoggle').click(function(){
+                    $('.slidetoggle').slideToggle();
+                });
+                $('.fadein').hide();
+                $('#fadein').click(function(){
+                    $('.fadein').fadeIn();
+                });
+                $('#fadeout').click(function(){
+                    $('.fadein').fadeOut();
+                });
+                $('#addclass').click(function(){
+                    $('.addclass').addClass('red');
+                });
+                $('#before').click(function(){
+                    $('.before').before('added before html tag ');
+                });
+                $('#after').click(function(){
+                    $('.after').after(' added after html tag');
+                });
+                $('#append').click(function(){
+                    $('.append').append(' appended inside html tag');
+                });
+                $('#html').click(function(){
+                    $('.html').html('<h3>some text</h3>');
+                });
+                var classname = $('.attr').attr('class');
+                $('#attr').click(function(){
+                    $('.attr').text(classname)
+                });
+                $('#val').click(function(){
+                    console.log($('.val').val())
+                });
+                $('#text').click(function(){
+                    $('.text').text('reeeppllaaccceedd')
+                });
+                var ele = $(".data")
+		        $.data(ele, "name", "some text!")
+		        $('#data').click(function(){
+			        var value = $.data(ele,"name")
+			        $(".data").after(value)
+		        });
+            });
         </script>
     </head>
     <body>
@@ -64,62 +105,63 @@
             <div class="section">
                 <h1>Slidetoggle</h1>
                 <button id="slidetoggle">Slidetoggle</button>
-                <p>Click the button to</p>
+                <p>Click the button to to slide toggle <span class="slidetoggle">some text</span></p>
             </div>
             <div class="section">
                 <h1>Fadein</h1>
                 <button id="fadein">Fadein</button>
-                <p>Click the button to</p>
+                <p>Click the button to fade in some text. <span class="fadein">some text</span></p>
             </div>
             <div class="section">
                 <h1>Fadeout</h1>
                 <button id="fadeout">Fadeout</button>
-                <p>Click the button to</p>
+                <p>Click the button to fade out the text from "Fadein"</p>
             </div>
             <div class="section">
                 <h1>Addclass</h1>
                 <button id="addclass">Addclass</button>
-                <p>Click the button to</p>
+                <p>Click the button to add the class 'red' to <span class="addclass">some text</span></p>
             </div>
             <div class="section">
                 <h1>Before</h1>
                 <button id="before">Before</button>
-                <p>Click the button to</p>
+                <p>Click the button to add before <span class="before">some text</span></p>
             </div>
             <div class="section">
                 <h1>After</h1>
                 <button id="after">After</button>
-                <p>Click the button to</p>
+                <p>Click the button to add after <span class="after">some text</span></p>
             </div>
             <div class="section">
                 <h1>Append</h1>
                 <button id="append">Append</button>
-                <p>Click the button to</p>
+                <p>Click the button to append text to <span class="append">some text</span></p>
             </div>
             <div class="section">
                 <h1>Html</h1>
                 <button id="html">Html</button>
-                <p>Click the button to</p>
+                <p>Click the button to change the tag of <span class="html">some text</span></p>
             </div>
             <div class="section">
                 <h1>Attr</h1>
                 <button id="attr">Attr</button>
-                <p>Click the button to</p>
+                <p>Click the button to see the classname using attr - classname= <span class="attr"></span></p>
             </div>
             <div class="section">
                 <h1>Val</h1>
                 <button id="val">Val</button>
-                <p>Click the button to</p>
+                <p>Click the button to console log the val</p>
+                <input type="text" class="val">
             </div>
             <div class="section">
                 <h1>Text</h1>
                 <button id="text">Text</button>
-                <p>Click the button to</p>
+                <p>Click the button to replace <span class="text">some text</span></p>
             </div>
             <div class="section">
                 <h1>Data</h1>
                 <button id="data">Data</button>
-                <p>Click the button to</p>
+                <p class="data">Click the button to find the hidden data</p>
             </div>
         </div>
     </body>

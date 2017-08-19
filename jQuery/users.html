@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <style>
+
+        </style>
+        <title>Users Form</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#submit').click(function(){
+                    $('tbody').append('<tr><td>' + $('input[name="first_name"]').val() 
+                    + '</td><td>' + $('input[name="last_name"]').val() 
+                    + '</td><td>' + $('input[name="email"]').val() 
+                    + '</td><td>' + $('input[name="contact"]').val());
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>Contact #</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <h1>Add User</h1>
+        <form action="">
+            <label for="fname">First Name:</label>
+            <input type="text" name="first_name" placeholder="First Name">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="last_name" placeholder="Last Name">
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Email">
+            <label for="contact">Contact No.:</label>
+            <input type="text" name="contact" placeholder="Phone #">
+            <input type="submit" id="submit" value="Add User">
+        </form>
+    </body>
+</html>

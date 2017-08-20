@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Contact Card</title>
+        <link rel="stylesheet" href="contactCard.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $(document).on('click', '.contact', function(){
+                    $(this).children().toggle()               
+                });
+
+                $('#submit').click(function(){
+                    $('#contactarea').append('<div class="contact"><div class="top"><h1>' + 
+                    $('input[name="fname"]').val() + ' ' + $('input[name="lname"]').val() +
+                    '</h1><p>Click here for a description</p></div><div class="bottom"><p>' + 
+                    $('textarea[name="description"]').val() + '</p><h5>' + 
+                    $('input[name="fname"]').val() + ' ' + $('input[name="lname"]').val() + 
+                    '</h5><p>Click to return</p>');
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <form action="contactCard.html">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" placeholder="First Name">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" placeholder="Last Name">
+                <label for="description">Description:</label>
+                <textarea name="description" cols="19" rows="8" placeholder="A short description"></textarea>
+                <input type="submit" value="Add Contact" id="submit">
+            </form>
+            <div id="contactarea">
+                <div class="contact" style="margin-right: 11px;">
+                    <div class="top">
+                        <h1>Patrick Bodin</h1>
+                        <p>Click for description</p>
+                    </div>
+                    <div class="bottom">
+                        <p>Hey my name is Patrick, I'm 26 and I'm incredibly happy to finally be pursuing my passion of full stack development!</p>
+                        <h5>Patrick Bodin</h5>
+                        <p>Click to return</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bottom {
+            display: none;
+        }
+        form {
+            display: inline-block;
+            width: 12%;
+        }
+        #contactarea {
+            display: inline-block;
+            width: 81%;
+            vertical-align: top;
+            padding: 0;
+            overflow: auto;
+        }
+        .contact {
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+            display: inline-block;
+            margin: 0 15px 15px 0;
+            vertical-align: top;
+        }
+        .contact h1 {
+            margin: 0;
+            padding: 0;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        textarea {
+            margin-bottom: 10px;
+        }
+        </style>
+</html>
